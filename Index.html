@@ -1,0 +1,1000 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="Scotland Trip">
+    <link rel="apple-touch-icon" href="data:image/png;base64,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">
+    <link rel="icon" type="image/png" href="data:image/png;base64,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">
+  <meta name="theme-color" content="#131313">
+  <title>Scotland & Netherlands 2026</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg:        #131313;
+      --surface:   #1c1b1b;
+      --card:      #2a2a2a;
+      --card-hi:   #353534;
+      --on-bg:     #e5e2e1;
+      --on-muted:  #c4c7c7;
+      --on-dim:    #8e9192;
+      --orange:    #ffb59c;
+      --orange-hot:#fa5c1c;
+      --blue:      #adc7ff;
+      --primary:   #c6c6c9;
+      --outline:   #444748;
+    }
+
+    html, body {
+      background: var(--bg);
+      color: var(--on-bg);
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      min-height: 100vh;
+      -webkit-text-size-adjust: 100%;
+    }
+
+    /* ── HEADER ── */
+    .app-header {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      padding: env(safe-area-inset-top, 0px) 20px 0;
+      background: rgba(19,19,19,0.7);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+    }
+
+    .header-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 16px 0 14px;
+    }
+
+    .header-wordmark {
+      font-family: 'Epilogue', sans-serif;
+      font-weight: 900;
+      font-size: 13px;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: var(--primary);
+    }
+
+    .header-badge {
+      font-size: 10px;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      color: var(--orange);
+      background: rgba(255,181,156,0.1);
+      padding: 4px 10px;
+      border-radius: 100px;
+    }
+
+    /* ── HERO ── */
+    .hero {
+      margin: 0 16px 32px;
+      border-radius: 20px;
+      overflow: hidden;
+      background: linear-gradient(135deg, #101214 0%, rgba(255,181,156,0.08) 100%);
+      padding: 32px 28px 28px;
+      position: relative;
+    }
+
+    .hero::after {
+      content: '';
+      position: absolute;
+      top: -40px; right: -40px;
+      width: 180px; height: 180px;
+      background: radial-gradient(circle, rgba(255,181,156,0.12) 0%, transparent 70%);
+      pointer-events: none;
+    }
+
+    .hero-eyebrow {
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--orange);
+      margin-bottom: 10px;
+    }
+
+    .hero-title {
+      font-family: 'Epilogue', sans-serif;
+      font-weight: 900;
+      font-size: 42px;
+      line-height: 0.95;
+      letter-spacing: -0.02em;
+      color: var(--on-bg);
+      margin-bottom: 16px;
+    }
+
+    .hero-title span { color: var(--primary); }
+
+    .hero-desc {
+      font-size: 13px;
+      line-height: 1.6;
+      color: var(--on-dim);
+      max-width: 260px;
+    }
+
+    .hero-meta {
+      display: flex;
+      gap: 20px;
+      margin-top: 24px;
+    }
+
+    .hero-stat { }
+    .hero-stat-val {
+      font-family: 'Epilogue', sans-serif;
+      font-size: 22px;
+      font-weight: 800;
+      color: var(--on-bg);
+      letter-spacing: -0.02em;
+    }
+    .hero-stat-label {
+      font-size: 10px;
+      color: var(--on-dim);
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      margin-top: 2px;
+    }
+
+    /* ── ALERTS ── */
+    .alerts-section {
+      padding: 0 16px;
+      margin-bottom: 32px;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .alert {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      padding: 12px 16px;
+      border-radius: 12px;
+      font-size: 12px;
+      line-height: 1.5;
+      font-weight: 500;
+    }
+
+    .alert-warn {
+      background: rgba(250,92,28,0.08);
+      color: var(--orange);
+    }
+
+    .alert-info {
+      background: rgba(173,199,255,0.06);
+      color: var(--blue);
+    }
+
+    .alert-icon {
+      font-size: 14px;
+      margin-top: 1px;
+      flex-shrink: 0;
+    }
+
+    /* ── SECTION LABEL ── */
+    .section-label {
+      padding: 0 20px;
+      margin-bottom: 12px;
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--on-dim);
+    }
+
+    /* ── TIMELINE ── */
+    .timeline {
+      padding: 0 16px;
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+      margin-bottom: 64px;
+    }
+
+    /* ── SEGMENT CARD ── */
+    .seg {
+      border-radius: 16px;
+      overflow: hidden;
+      background: var(--surface);
+      transition: background 0.15s;
+    }
+
+    .seg.is-open { background: var(--card); }
+
+    .seg-btn {
+      width: 100%;
+      background: none;
+      border: none;
+      cursor: pointer;
+      padding: 16px;
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      text-align: left;
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    .seg-icon {
+      width: 40px;
+      height: 40px;
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 17px;
+      flex-shrink: 0;
+    }
+
+    .seg-info { flex: 1; min-width: 0; }
+
+    .seg-eyebrow {
+      font-size: 9px;
+      font-weight: 700;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      margin-bottom: 3px;
+    }
+
+    .seg-name {
+      font-family: 'Epilogue', sans-serif;
+      font-size: 15px;
+      font-weight: 800;
+      color: var(--on-bg);
+      letter-spacing: -0.01em;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .seg-sub {
+      font-size: 11px;
+      color: var(--on-dim);
+      margin-top: 2px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .seg-right {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      flex-shrink: 0;
+    }
+
+    .warn-pip {
+      width: 6px; height: 6px;
+      border-radius: 50%;
+      background: var(--orange-hot);
+      flex-shrink: 0;
+    }
+
+    .chevron {
+      font-size: 10px;
+      color: var(--outline);
+      transition: transform 0.2s;
+      display: inline-block;
+    }
+    .chevron.open { transform: rotate(180deg); color: var(--on-dim); }
+
+    /* ── SEGMENT BODY ── */
+    .seg-body {
+      padding: 0 16px 20px 70px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .seg-divider {
+      height: 1px;
+      background: rgba(68,71,72,0.4);
+      margin: 0 16px 16px 70px;
+    }
+
+    .detail-row {
+      display: flex;
+      gap: 16px;
+      font-size: 12px;
+      line-height: 1.4;
+    }
+
+    .d-label {
+      width: 76px;
+      flex-shrink: 0;
+      font-size: 9px;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--on-dim);
+      padding-top: 1px;
+    }
+
+    .d-val {
+      color: var(--on-muted);
+      flex: 1;
+      font-weight: 500;
+    }
+
+    .qr-block {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        padding: 12px 0 4px 0;
+      }
+      .qr-img {
+        width: 80px;
+        height: 80px;
+        border-radius: 6px;
+        background: white;
+        padding: 4px;
+      }
+      .qr-label {
+        font-size: 11px;
+        color: var(--text-muted);
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+      }
+      .email-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      margin-top: 8px;
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--blue);
+      text-decoration: none;
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    /* ── TYPE COLORS ── */
+    .type-flight .seg-icon  { background: rgba(173,199,255,0.1); color: var(--blue); }
+    .type-flight .seg-eyebrow { color: var(--blue); }
+
+    .type-train .seg-icon   { background: rgba(198,198,201,0.08); color: var(--primary); }
+    .type-train .seg-eyebrow { color: var(--primary); }
+
+    .type-ferry .seg-icon   { background: rgba(173,199,255,0.08); color: var(--blue); }
+    .type-ferry .seg-eyebrow { color: var(--blue); }
+
+    .type-car .seg-icon     { background: rgba(255,181,156,0.1); color: var(--orange); }
+    .type-car .seg-eyebrow  { color: var(--orange); }
+
+    .type-stay .seg-icon    { background: rgba(255,181,156,0.08); color: var(--orange); }
+    .type-stay .seg-eyebrow { color: var(--orange); }
+
+    .type-explore .seg-icon    { background: rgba(173,199,255,0.08); color: var(--blue); }
+    .type-explore .seg-eyebrow { color: var(--blue); }
+
+    /* ── EXPLORE CARDS ── */
+    .explore-section { display: flex; flex-direction: column; gap: 6px; }
+
+    .explore-cat-label {
+      font-size: 9px;
+      font-weight: 700;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--on-dim);
+      margin-top: 8px;
+      margin-bottom: 2px;
+    }
+
+    .explore-item {
+      background: var(--card-hi);
+      border-radius: 10px;
+      padding: 10px 12px;
+      display: flex;
+      flex-direction: column;
+      gap: 3px;
+    }
+
+    .explore-name {
+      font-family: 'Epilogue', sans-serif;
+      font-size: 13px;
+      font-weight: 700;
+      color: var(--on-bg);
+      letter-spacing: -0.01em;
+    }
+
+    .explore-meta {
+      font-size: 10.5px;
+      color: var(--on-dim);
+      line-height: 1.4;
+    }
+
+    .explore-tag {
+      display: inline-block;
+      font-size: 9px;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      padding: 2px 7px;
+      border-radius: 100px;
+      margin-top: 4px;
+    }
+
+    .tag-coffee  { background: rgba(255,181,156,0.12); color: var(--orange); }
+    .tag-beer    { background: rgba(173,199,255,0.12); color: var(--blue); }
+    .tag-walk    { background: rgba(198,198,201,0.1);  color: var(--primary); }
+    .tag-audio   { background: rgba(173,199,255,0.08); color: var(--blue); }
+    .tag-patio   { background: rgba(255,181,156,0.15); color: var(--orange-hot); }
+
+    /* ── FOOTER ── */
+    .app-footer {
+      position: fixed;
+      bottom: 0; left: 0; right: 0;
+      padding: 12px 0 env(safe-area-inset-bottom, 12px);
+      background: rgba(19,19,19,0.85);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      display: flex;
+      justify-content: center;
+    }
+
+    .footer-text {
+      font-size: 9px;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--outline);
+    }
+  </style>
+</head>
+<body>
+
+  <header class="app-header">
+    <div class="header-inner">
+      <div class="header-wordmark">Voyager</div>
+      <div class="header-badge">Apr 14 – May 12</div>
+    </div>
+  </header>
+
+  <div style="height:16px"></div>
+
+  <!-- HERO -->
+  <div class="hero">
+    <div class="hero-eyebrow">Family Expedition · 2026</div>
+    <h1 class="hero-title">Scotland<br><span>&amp; Netherlands</span></h1>
+    <p class="hero-desc">Matt, Lisa + infant. 28 days across The Hague, Edinburgh, the Highlands, Isle of Skye, London and Leiden.</p>
+    <div class="hero-meta">
+      <div class="hero-stat">
+        <div class="hero-stat-val">28</div>
+        <div class="hero-stat-label">Days</div>
+      </div>
+      <div class="hero-stat">
+        <div class="hero-stat-val">12</div>
+        <div class="hero-stat-label">Bookings</div>
+      </div>
+      <div class="hero-stat">
+        <div class="hero-stat-val">3</div>
+        <div class="hero-stat-label">Countries</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ALERTS -->
+  <div class="alerts-section" id="alerts"></div>
+
+  <!-- TIMELINE -->
+  <div class="section-label">Itinerary</div>
+  <div class="timeline" id="timeline"></div>
+
+  <div class="app-footer">
+    <span class="footer-text">All times local &middot; Tap to expand</span>
+  </div>
+
+<script>
+const alerts = [
+  { type: 'warning', text: 'Edinburgh → London train not yet booked. Check out The Raeburn May 1 (11:00 AM) — must arrive London before Eurostar May 4 at 09:01.' },
+  { type: 'warning', text: 'CalMac Apr 26: Ferry check-in closes 11:10 in Mallaig. Snowberry checkout 10:00 AM. Leave Onich by 09:30.' },
+  { type: 'info',    text: 'Avis covers Apr 23–29: Edinburgh → Onich → Mallaig → Skye → Edinburgh.' },
+  { type: 'info',    text: 'Return KL0681 May 12: Leiden checkout 11:00 AM → Schiphol ~45 min → departs 15:20.' },
+];
+
+const segments = [
+  {
+    id: 's0', type: 'flight', icon: '✈',
+    eyebrow: 'Flight · Departure',
+    title: 'YVR → AMS',
+    sub: 'Apr 14–15 · Vancouver to Amsterdam',
+    qrUrl: 'https://chart.googleapis.com/chart?chs=200x200&cht=qr&chl=YVJCWR&choe=UTF-8',
+    details: [
+      { label: 'Depart',    value: 'Tue Apr 14 · 17:50 · Vancouver YVR Terminal M · Zone 4' },
+      { label: 'Arrive',    value: 'Wed Apr 15 · 12:05 (D+1) · Schiphol AMS' },
+      { label: 'Flight',    value: 'KLM KL0682 · Economy' },
+      { label: 'PNR',       value: 'YVJCWR' },
+      { label: 'Seats',     value: 'Matt 52E · Lisa 52D · Casper INF' },
+      { label: 'Boarding',  value: 'Gate closes 17:35 · Arrive airport by 14:50' },
+      { label: 'Baggage',   value: 'Matt + Lisa: 1x checked (23 kg) + hand bag · Casper: infant' },
+    ],
+  },
+  {
+    id: 's1', type: 'stay', icon: '⌂',
+    eyebrow: 'Residence',
+    title: 'The Hague',
+    sub: "Apr 15–20 · Lisa's Family",
+    details: [
+      { label: 'Dates',     value: 'Wed Apr 15 → Mon Apr 20' },
+      { label: 'Departure', value: 'Apr 20 · car ride to Den Haag Centraal · 08:42 train' },
+      { label: 'Note',      value: 'No booking — staying with family' },
+    ],
+  },
+  {
+    id: 's2', type: 'train', icon: '⇢',
+    eyebrow: 'Train · Eurostar',
+    title: 'Den Haag → London',
+    sub: 'Apr 20 · 08:42 – 11:57',
+    emailLink: 'https://mail.google.com/mail/u/0/#inbox/19d9a441ada5daea',
+    details: [
+      { label: 'Depart',   value: 'Den Haag Centraal · 08:42' },
+      { label: 'Arrive',   value: 'London St Pancras · 11:57' },
+      { label: 'Via',      value: '1x change · Brussels' },
+      { label: 'Operator', value: 'NS International' },
+      { label: '⚠ Note',  value: 'Passport control closes 30 min before dep. in Brussels' },
+      { label: 'Transfer', value: 'St Pancras → Kings Cross · adjacent, ~30 min' },
+    ],
+  },
+  {
+    id: 's3', type: 'train', icon: '⇢',
+    eyebrow: 'Train · LNER',
+    title: 'London → Edinburgh',
+    sub: 'Apr 20 · 13:03 – 17:31',
+    emailLink: 'https://mail.google.com/mail/u/0/#inbox/19d9a8d18c248f1e',
+    details: [
+      { label: 'Depart',     value: 'London Kings Cross · 13:03' },
+      { label: 'Arrive',     value: 'Edinburgh Waverley · 17:31 · 4h 28m' },
+      { label: 'Service',    value: 'LNER C41072' },
+      { label: 'Booking',    value: 'Omio #3976620' },
+      { label: 'Passengers', value: '2 Adults + 1 Infant · CA$307.09' },
+    ],
+  },
+  {
+    id: 's4', type: 'stay', icon: '⌂',
+    eyebrow: 'Stay · Airbnb',
+    title: 'Stockbridge, Edinburgh',
+    sub: 'Apr 20–23 · 3 nights',
+    emailLink: 'https://mail.google.com/mail/u/0/#inbox/19cd10af4f8ce162',
+    details: [
+      { label: 'Address',  value: '16 Comely Bank Pl, Edinburgh EH4 1DU' },
+      { label: 'Check-in', value: 'Mon Apr 20 · after 4:00 PM' },
+      { label: 'Checkout', value: 'Thu Apr 23 · by 11:00 AM' },
+      { label: 'Access',   value: 'Self check-in · lockbox' },
+      { label: 'Host',     value: 'Natalie · +44 7853 664527' },
+      { label: 'Code',     value: 'HMFDT3FK2E · CAD $995.91' },
+    ],
+  },
+  {
+    id: 's4x', type: 'explore', icon: '◈',
+    eyebrow: 'Explore · Edinburgh',
+    title: 'Things to Do · Stockbridge',
+    sub: 'Apr 20–23 · walks, coffee, beer, audio tour',
+    explore: [
+      {
+        cat: '☕ Coffee & Food',
+        items: [
+          { name: 'Fortitude Coffee', meta: 'House-roasted beans, relaxed vibe, changing table. Off Raeburn Pl · 8:30am–4pm Mon–Fri', tag: 'coffee', maps: 'https://www.google.com/maps/search/?api=1&query=Fortitude+Coffee+66+Hamilton+Place+Edinburgh' },
+          { name: 'Söderberg', meta: 'Swedish café — famous cinnamon buns, patio seating, Scandi minimal. Open daily 8am–6pm', tag: 'coffee', maps: 'https://www.google.com/maps/search/?api=1&query=Soderberg+3+Deanhaugh+Street+Edinburgh' },
+          { name: 'The Pantry', meta: 'Best brunch in Stockbridge — seasonal menu, great eggs. Arrive at 9am or queue. Daily 9am–3pm', tag: 'coffee', maps: 'https://www.google.com/maps/search/?api=1&query=The+Pantry+1+NW+Circus+Place+Edinburgh' },
+        ],
+      },
+      {
+        cat: '🍺 Beer',
+        items: [
+          { name: 'The Stockbridge Tap', meta: 'Your local — daily rotating craft beers, right on Raeburn Pl. Opens noon daily', tag: 'beer', maps: 'https://www.google.com/maps/search/?api=1&query=The+Stockbridge+Tap+2+Raeburn+Place+Edinburgh' },
+          { name: 'Newbarns Brewery Taproom', meta: 'Best taproom in Edinburgh (★4.9). Leith — open Wed–Sun. Go Wed eve or Thu afternoon', tag: 'beer', maps: 'https://www.google.com/maps/search/?api=1&query=Newbarns+Brewery+13+Jane+Street+Edinburgh' },
+          { name: 'Moonwake Beer Co.', meta: 'Waterfront brewery taproom, Leith. Open Thu–Sun. Pair with Newbarns — 5 min walk between them', tag: 'beer', maps: 'https://www.google.com/maps/search/?api=1&query=Moonwake+Beer+Co+6A+Tower+Street+Leith+Edinburgh' },
+        ],
+      },
+      {
+        cat: '🚶 Walks',
+        items: [
+          { name: 'Water of Leith → Dean Village', meta: 'Start from your doorstep, follow the river west. ~20 min to Dean Village — weirs, ancient architecture, total calm. Pram-friendly.', tag: 'walk', maps: 'https://www.google.com/maps/search/?api=1&query=Dean+Village+Edinburgh' },
+          { name: 'Royal Botanic Garden', meta: '72 acres, free entry, pushchair-friendly paths, outdoor café. 10 min walk north. Open 10am–5pm', tag: 'walk', maps: 'https://www.google.com/maps/search/?api=1&query=Royal+Botanic+Garden+Edinburgh' },
+          { name: 'Circus Lane', meta: 'Most photographed street in Edinburgh — cobbled, flower-lined. 5 min from the Airbnb, worth a detour', tag: 'walk', maps: 'https://www.google.com/maps/search/?api=1&query=Circus+Lane+Edinburgh' },
+        ],
+      },
+      {
+        cat: '☀️ Patios',
+        items: [
+          { name: 'Hectors', meta: 'The best people-watching seat in Stockbridge — outdoor tables look straight down Deanhaugh St high street. Order a Hugo spritz and watch the neighbourhood go by. Opens noon daily.', tag: 'patio', maps: 'https://www.google.com/maps/search/?api=1&query=Hectors+47+Deanhaugh+Street+Edinburgh' },
+          { name: 'Söderberg', meta: 'Already in the coffee list — but worth flagging the patio separately. Tables spill onto the main strip, great for a slow cinnamon bun and watching Stockbridge life. Open 8am daily.', tag: 'patio', maps: 'https://www.google.com/maps/search/?api=1&query=Soderberg+3+Deanhaugh+Street+Edinburgh' },
+          { name: 'The Raeburn', meta: 'Leafy, relaxed beer garden — your hotel for the second Edinburgh stint but open to all now. Rugs on the chairs, dog-friendly, no rush. Great for a pint with the pram parked up. 8am–midnight.', tag: 'patio', maps: 'https://www.google.com/maps/search/?api=1&query=The+Raeburn+112+Raeburn+Place+Edinburgh' },
+          { name: 'The Scran & Scallie', meta: 'Michelin Bib Gourmand gastropub from Tom Kitchin. Outdoor tables on Comely Bank Rd — more of a neighbourhood restaurant feel than a tourist spot. Book ahead. Opens noon daily.', tag: 'patio', maps: 'https://www.google.com/maps/search/?api=1&query=The+Scran+and+Scallie+1+Comely+Bank+Road+Edinburgh' },
+          { name: 'Artisan Roast', meta: 'A few pavement tables right on Raeburn Pl — no booking, just rock up. Serious coffee roaster, good pastries, dog-friendly. Earliest opener on the strip at 7:30am Mon–Fri.', tag: 'patio', maps: 'https://www.google.com/maps/search/?api=1&query=Artisan+Roast+100A+Raeburn+Place+Edinburgh' },
+          { name: 'The Bailie Bar', meta: 'Stockbridge institution since the 1870s — flower-lined exterior on St Stephen St, a handful of outdoor tables, proper cask ales, hearty snacks. No booking, no nonsense. Opens 11am daily.', tag: 'patio', maps: 'https://www.google.com/maps/search/?api=1&query=The+Bailie+Bar+2+St+Stephen+Street+Edinburgh' },
+          { name: 'Botanic Garden Terrace Café', meta: 'The most pram-friendly sit-down in Stockbridge. Walk the gardens, collapse on the outdoor terrace with coffee and cake. No booking, free entry to the garden. Open 10am–5pm daily.', tag: 'patio', maps: 'https://www.google.com/maps/search/?api=1&query=Royal+Botanic+Garden+Edinburgh+cafe' },
+        ],
+      },
+      {
+        cat: '🎧 Audio Tour',
+        items: [
+          { name: 'VoiceMap: Dean Village & Water of Leith', meta: "GPS-triggered audio tour. Starts at Dean Village, covers St Bernard's Well, Dean Bridge, ends in Stockbridge. ~£5-8. Download VoiceMap app first.", tag: 'audio', maps: 'https://voicemap.me/tour/edinburgh/edinburgh-s-dean-village-a-historical-wander-along-the-water-of-leith-walkway' },
+        ],
+      },
+      {
+        cat: '📍 Friends — Walks',
+        items: [
+          { name: 'Calton Hill', meta: '30 min from Stockbridge. Easy climb, spectacular 360 view — castle, Arthur Seat, Leith, the Firth. Far more manageable than Arthur Seat. Free, open all day.', tag: 'walk', maps: 'https://www.google.com/maps/search/?api=1&query=Calton+Hill+Edinburgh' },
+          { name: "Arthur's Seat", meta: '45 min from Stockbridge (bus/taxi). Ancient volcano in the city — proper hike, ~1 hr up. Not pram-friendly for climbing but worth it. Best paired with a pint at the Sheep Heid Inn at the bottom.', tag: 'walk', maps: 'https://www.google.com/maps/search/?api=1&query=Arthurs+Seat+Edinburgh' },
+          { name: 'Cramond — Tidal Island', meta: '30 min by bus/taxi. Walk across a WW2 concrete causeway to a tidal island in the Firth of Forth. Pram-friendly promenade. MUST check tide times — text CRAMOND to 81400. Allow 2-3 hrs total.', tag: 'walk', maps: 'https://www.google.com/maps/search/?api=1&query=Cramond+Causeway+Edinburgh' },
+          { name: 'Portobello Beach', meta: '30 min by bus. Edinburgh proper beach — long sandy promenade, cafes, zero tourists. Perfect for a sunny afternoon. Faces east, great at sunrise. Pram-perfect flat walk.', tag: 'walk', maps: 'https://www.google.com/maps/search/?api=1&query=Portobello+Beach+Edinburgh' },
+        ],
+      },
+      {
+        cat: '📍 Friends — Pubs',
+        items: [
+          { name: 'The Bow Bar', meta: 'Old Town — 20 min from Stockbridge. Nearly 500 whiskies, excellent real ale, tiny and atmospheric. Staff explain and recommend. No music, no frills. Opens noon.', tag: 'beer', maps: 'https://www.google.com/maps/search/?api=1&query=The+Bow+Bar+80+West+Bow+Edinburgh' },
+          { name: 'Jolly Judge', meta: 'Royal Mile — 20 min from Stockbridge. Hidden down a close off the Lawnmarket, low beamed ceiling, excellent cask ales. One of the best hidden pubs in Edinburgh. Opens noon.', tag: 'beer', maps: 'https://www.google.com/maps/search/?api=1&query=Jolly+Judge+James+Court+Edinburgh' },
+          { name: "Canny Man's", meta: 'Morningside — 25 min south. Out of the way but worth it — legendary institution, hundreds of antiques on the walls, eccentric decor, brilliant food. Worth a taxi.', tag: 'beer', maps: 'https://www.google.com/maps/search/?api=1&query=Canny+Mans+237+Morningside+Road+Edinburgh' },
+          { name: 'Sheep Heid Inn', meta: 'Duddingston — 30 min, at foot of Arthur Seat. Scotland oldest pub (~1360). Has a traditional skittles alley. Best paired with an Arthur Seat walk. Book for Sunday roast.', tag: 'beer', maps: 'https://www.google.com/maps/search/?api=1&query=Sheep+Heid+Inn+43+The+Causeway+Edinburgh' },
+          { name: 'BrewDog Edinburgh', meta: 'City centre. Friend says: for when you get tired of warm cask ales and want cold fizzy IPAs. Multiple locations.', tag: 'beer', maps: 'https://www.google.com/maps/search/?api=1&query=BrewDog+Edinburgh' },
+        ],
+      },
+      {
+        cat: '📍 Friends — Food',
+        items: [
+          { name: 'Mother India Cafe', meta: 'Old Town — 25 min from Stockbridge. Tapas-style Indian, order lots of small plates. Friend went to Glasgow one constantly. Highly rated. Opens noon daily.', tag: 'coffee', maps: 'https://www.google.com/maps/search/?api=1&query=Mother+India+Cafe+3+Infirmary+Street+Edinburgh' },
+          { name: 'Fish & Chips + Battered Sausage', meta: 'Any good chippy. Friend says: must try the battered sausage or battered pizza. Chips come with a vinegary brown sauce — unique Edinburgh thing. A local ritual.', tag: 'coffee', maps: 'https://www.google.com/maps/search/?api=1&query=best+fish+and+chips+Edinburgh' },
+        ],
+      },
+      {
+        cat: '📍 Friends — Old Town Walk',
+        items: [
+          { name: 'Waverley to Castle via Royal Mile', meta: 'Classic friend route: arrive at Waverley, walk up The Mound to Royal Mile, along to the Castle. Then down George IV Bridge past the university at Bristo Square, or down to the Grassmarket. Covers the main sights in 2-3 hrs.', tag: 'walk', maps: 'https://www.google.com/maps/search/?api=1&query=Royal+Mile+Edinburgh' },
+        ],
+      },
+      {
+        cat: '🏰 Historic Highlights',
+        items: [
+          { name: 'Edinburgh Castle', meta: '25 min from Stockbridge. Scotland oldest crown jewels, Mary Queen of Scots chambers, WW2 POW vaults, One O Clock Gun at 1pm daily (not Sundays). Allow 2-3 hrs. Book tickets in advance — sells out. Open 9:30am daily. Expensive but worth it.', tag: 'walk', maps: 'https://www.google.com/maps/search/?api=1&query=Edinburgh+Castle' },
+          { name: 'Palace of Holyroodhouse', meta: '30 min from Stockbridge. The Royal Mile ends here — official Scottish residence of the King. Mary Queen of Scots rooms, the spot where her secretary was murdered, 12th century abbey ruins. Free audio guide included. Closed Tue/Wed (open 7 days May–Sept). Open 9:30am.', tag: 'walk', maps: 'https://www.google.com/maps/search/?api=1&query=Palace+of+Holyroodhouse+Edinburgh' },
+          { name: 'National Museum of Scotland', meta: '25 min from Stockbridge. Entirely FREE. Scottish history from prehistoric times to the present — Dolly the sheep, ancient Celtic jewellery, mediaeval weapons. Outstanding building. Great rainy day option with a pram. Open 10am-5pm daily.', tag: 'walk', maps: 'https://www.google.com/maps/search/?api=1&query=National+Museum+of+Scotland+Edinburgh' },
+          { name: "The Real Mary Kings Close", meta: "25 min from Stockbridge. Guided tour through a sealed underground street beneath the Royal Mile, dating to the 1600s — plague stories, preserved homes, genuinely atmospheric. Book ahead. ~1 hr tour. Open from 9:30am.", tag: "walk", maps: "https://www.google.com/maps/search/?api=1&query=Real+Mary+Kings+Close+Edinburgh" },
+          { name: 'Scottish National Gallery', meta: '20 min from Stockbridge. FREE. On The Mound — Velazquez, Rembrandt, Monet, Van Gogh alongside the best Scottish painters. Small enough to do in 90 min. Good rainy day option. Open 10am-5pm daily.', tag: 'walk', maps: 'https://www.google.com/maps/search/?api=1&query=Scottish+National+Gallery+Edinburgh' },
+        ],
+      },
+    ],
+  },
+  {
+    id: 's5', type: 'car', icon: '◎',
+    eyebrow: 'Car · Avis Pick-up',
+    title: 'Edinburgh Waverley',
+    sub: 'Apr 23 · 9:00 AM',
+    emailLink: 'https://mail.google.com/mail/u/0/#inbox/19cfd17a99d63004',
+    details: [
+      { label: 'Location',  value: 'Qpark Greenside Row, Level -2' },
+      { label: 'Vehicle',   value: 'Peugeot 2008 or similar' },
+      { label: 'Ref',       value: '#09537327CA2 · CAD $542.29' },
+      { label: 'Drop-off',  value: 'Apr 29 · 5:00 PM · same location' },
+      { label: 'Phone',     value: '03305510967' },
+    ],
+  },
+  {
+    id: 's6', type: 'stay', icon: '⌂',
+    eyebrow: 'Stay · Cottage',
+    title: 'Snowberry Cottages, Onich',
+    sub: 'Apr 23–26 · 3 nights',
+    emailLink: 'https://mail.google.com/mail/u/0/#inbox/19cdb32e3ddc66c8',
+    details: [
+      { label: 'Address',  value: '6 Cuilcheanna, Onich PH33 6SD' },
+      { label: 'Check-in', value: 'Thu Apr 23 · 4:00–11:00 PM' },
+      { label: 'Checkout', value: 'Sun Apr 26 · by 10:00 AM' },
+      { label: 'Access',   value: 'Host meets you at property' },
+      { label: 'Host',     value: '+447828250436' },
+      { label: 'Code',     value: '6103962398 · PIN: 1426 · CAD $903.10' },
+    ],
+    explore: [
+      {
+        cat: '☕ En Route Coffee — Onich to Skye',
+        items: [
+          { name: 'The Wildcat, Fort William', meta: 'Best coffee on the route — specialty cafe on Fort William High Street using Dear Green beans (one of the best Scottish roasters). 100% vegan but universally loved. Pastries, waffles, chai and matcha lattes. Opens 8am Mon–Sat, 9:30am Sun. 30 min from Onich, directly on your route.', tag: 'coffee', maps: 'https://www.google.com/maps/search/?api=1&query=The+Wildcat+21+High+Street+Fort+William' },
+          { name: 'All The Goodness, Ardelve', meta: 'Husband and wife bakeshop opposite Eilean Donan Castle on the A87 — single-origin coffee, cinnamon and vanilla sticky buns hot from the oven, outdoor benches with castle view. Takeaway only. ~1hr 20min from Onich. Open Fri–Sun 9am–3:30pm. Worth stopping if the timing works.', tag: 'coffee', maps: 'https://www.google.com/maps/search/?api=1&query=All+The+Goodness+Coffee+Bakeshop+Ardelve+Dornie' },
+        ],
+      },
+      {
+        cat: '🍽️ Lunch — Glencoe & Loch Leven',
+        items: [
+          { name: 'Loch Leven Seafood Cafe', meta: '5 min drive — right on the shore of Loch Leven at Onich. Shellfish from live tanks next door: lobster, crab, langoustines, oysters, scallops. Outdoor terrace with loch view. Kid-friendly (toddlers accommodated off-menu per reviews). River Leven Ales on tap. The move for lunch. ⚠️ Closed Tue/Wed. Book ahead.', tag: 'coffee', maps: 'https://www.google.com/maps/search/?api=1&query=Loch+Leven+Seafood+Cafe+Onich' },
+          { name: 'Clachaig Inn, Glencoe', meta: '15 min drive into Glencoe. Outdoor beer garden with mountain views, real ales, child-friendly, food noon–9pm. Best post-walk pint in the area. More pub than restaurant — go here after a walk, go to Loch Leven for a proper lunch.', tag: 'beer', maps: 'https://www.google.com/maps/search/?api=1&query=Clachaig+Inn+Glencoe' },
+        ],
+      },
+    ],
+  },
+  {
+    id: 's7', type: 'ferry', icon: '≋',
+    eyebrow: 'Ferry · CalMac',
+    title: 'Mallaig → Armadale',
+    sub: 'Apr 26 · Departs 11:30',
+    warning: true,
+    emailLink: 'https://mail.google.com/mail/u/0/#inbox/19cfd0a433a18f3e',
+    details: [
+      { label: 'Check-in', value: 'Closes 11:10 · Mallaig Ferry Terminal' },
+      { label: 'Departs',  value: '11:30 · Arrives 12:00 · Armadale, Skye' },
+      { label: 'Booked',   value: '2 Adults, 1 Infant, 1 Car' },
+      { label: 'Booking',  value: 'S2600333783' },
+      { label: '⚠ Timing', value: 'Snowberry checkout 10:00 AM · drive ~1.5 hrs · leave Onich by 09:30' },
+    ],
+  },
+  {
+    id: 's8', type: 'stay', icon: '⌂',
+    eyebrow: 'Stay · Airbnb',
+    title: 'An Corran View, Skye',
+    sub: 'Apr 26–29 · 3 nights',
+    emailLink: 'https://mail.google.com/mail/u/0/#inbox/19cfd35e708164e6',
+    details: [
+      { label: 'Address',  value: '10 Digg, Staffin, Portree IV51 9LA' },
+      { label: 'Check-in', value: 'Sun Apr 26 · after 3:00 PM' },
+      { label: 'Checkout', value: 'Wed Apr 29 · by 10:00 AM' },
+      { label: 'Host',     value: 'Ian · +44 7824 397448' },
+      { label: 'Code',     value: 'HMM2YJ4XPK · CAD $1,260.16' },
+    ],
+  },
+  {
+    id: 's9', type: 'car', icon: '◎',
+    eyebrow: 'Car · Avis Drop-off',
+    title: 'Edinburgh Waverley',
+    sub: 'Apr 29 · 5:00 PM',
+    emailLink: 'https://mail.google.com/mail/u/0/#inbox/19cfd17a99d63004',
+    details: [
+      { label: 'Location', value: 'Qpark Greenside Row, Level -2' },
+      { label: 'Phone',    value: '03305510967' },
+      { label: 'Ref',      value: '#09537327CA2' },
+    ],
+  },
+  {
+    id: 's10', type: 'stay', icon: '⌂',
+    eyebrow: 'Stay · Hotel',
+    title: 'The Raeburn, Edinburgh',
+    sub: 'Apr 29 – May 1 · 2 nights',
+    emailLink: 'https://mail.google.com/mail/u/0/#inbox/19cd0f72aa67f8d1',
+    details: [
+      { label: 'Address',  value: '112 Raeburn Place, Edinburgh EH4 1HG' },
+      { label: 'Check-in', value: 'Wed Apr 29 · from 3:00 PM' },
+      { label: 'Checkout', value: 'Fri May 1 · by 11:00 AM' },
+      { label: 'Room',     value: 'Deluxe Double · cot confirmed' },
+      { label: 'Breakfast',value: '£17.50/person/night (optional)' },
+      { label: 'Code',     value: '5139477133 · PIN: 6676 · £504 at property' },
+      { label: 'Cancel',   value: 'Free until Apr 26, 23:59 BST' },
+      { label: 'Phone',    value: '+44 131 332 7000' },
+    ],
+  },
+  {
+    id: 's10x', type: 'explore', icon: '◈',
+    eyebrow: 'Explore · Leith',
+    title: 'Things to Do · The Shore',
+    sub: 'Apr 29 – May 1 · coffee, beer, waterfront walk',
+    explore: [
+      {
+        cat: '🚌 Getting There',
+        items: [
+          { name: 'Bus from Stockbridge', meta: 'Lothian Bus 16 or 36 from Raeburn Pl to The Shore — about 15 min, £2. Or walk the Water of Leith path east (~40 min, flat, pram-friendly)', tag: 'walk', maps: 'https://www.google.com/maps/search/?api=1&query=The+Shore+Leith+Edinburgh' },
+        ],
+      },
+      {
+        cat: '☕ Coffee',
+        items: [
+          { name: 'Williams & Johnson Coffee', meta: 'Best coffee in Leith — in-house roastery under the Custom Lane arches by the water. Sit outside overlooking the dock. Spacious & pram-friendly. 8am–5pm daily', tag: 'coffee', maps: 'https://www.google.com/maps/search/?api=1&query=Williams+Johnson+Coffee+Custom+Lane+Leith+Edinburgh' },
+          { name: "Mimi's Bakehouse", meta: 'Leith institution — famous scones, cakes, afternoon tea, waterfront location on The Shore. Best scones in Edinburgh per locals. Opens from 9am', tag: 'coffee', maps: 'https://www.google.com/maps/search/?api=1&query=Mimis+Bakehouse+63+Shore+Leith+Edinburgh' },
+        ],
+      },
+      {
+        cat: '🍺 Beer',
+        items: [
+          { name: 'Newbarns Brewery Taproom', meta: 'Highest-rated taproom in Edinburgh (★4.9) — cosy pub vibes, beer garden, pop-up food kitchen. Open Wed–Sun. 5 min walk from The Shore', tag: 'beer', maps: 'https://www.google.com/maps/search/?api=1&query=Newbarns+Brewery+13+Jane+Street+Edinburgh' },
+          { name: 'Moonwake Beer Co.', meta: 'Waterfront brewery taproom — brewing tanks front and centre, right on The Shore. Open Thu–Sun. Pair with Newbarns if you go Thursday', tag: 'beer', maps: 'https://www.google.com/maps/search/?api=1&query=Moonwake+Beer+Co+6A+Tower+Street+Leith+Edinburgh' },
+        ],
+      },
+      {
+        cat: '🍽️ Food',
+        items: [
+          { name: 'Fishers Bistro', meta: 'Leith landmark for seafood — in a 17th-century watchtower on the Shore. Outdoor tables by the water. Local halibut, scallops, oysters. Book ahead. Opens noon.', tag: 'coffee', maps: 'https://www.google.com/maps/search/?api=1&query=Fishers+Bistro+1+Shore+Leith+Edinburgh' },
+        ],
+      },
+      {
+        cat: '☀️ Patios',
+        items: [
+          { name: "Teuchters Landing", meta: 'The ultimate Leith patio — long terrace overhanging the water, fairy lights, blankets and heaters, brilliant Cullen skink and seafood. Opens 10am daily. Perfect with a pram.', tag: 'patio', maps: 'https://www.google.com/maps/search/?api=1&query=Teuchters+Landing+1+Dock+Place+Leith+Edinburgh' },
+        ],
+      },
+      {
+        cat: '🚶 Walks',
+        items: [
+          { name: 'The Shore waterfront', meta: 'Cobblestone waterfront walk along the final stretch of the Water of Leith before it meets the Firth of Forth. Historic warehouses, boats, public art. Completely flat and pram-friendly.', tag: 'walk', maps: 'https://www.google.com/maps/search/?api=1&query=The+Shore+Leith+Edinburgh+waterfront' },
+          { name: 'Leith Links', meta: 'Large flat park at the heart of residential Leith — birthplace of golf rules in 1744. Good for a pram wander, locals walking dogs, totally untouristy.', tag: 'walk', maps: 'https://www.google.com/maps/search/?api=1&query=Leith+Links+Edinburgh' },
+          { name: 'Water of Leith path back to Stockbridge', meta: 'Walk home from Leith along the river — ~40 min to Stockbridge, passes Newbarns, then tree-lined riverside path. Sign-posted, almost entirely flat.', tag: 'walk', maps: 'https://www.google.com/maps/search/?api=1&query=Water+of+Leith+Walkway+Edinburgh' },
+        ],
+      },
+    ],
+  },
+  {
+    id: 's11', type: 'stay', icon: '⌂',
+    eyebrow: 'Stay · Hotel',
+    title: 'The Cumberland, London',
+    sub: 'May 1–4 · 3 nights',
+    warning: true,
+    details: [
+      { label: 'Address',  value: 'Great Cumberland Place, London W1H 7DL' },
+      { label: 'Check-in', value: 'Fri May 1 · arriving ~2:00 PM' },
+      { label: 'Checkout', value: 'Mon May 4 · before Eurostar 09:01' },
+      { label: '⚠ To do',  value: 'Book Edinburgh → London train (LNER, ~4.5 hrs) for May 1' },
+    ],
+  },
+  {
+    id: 's11x', type: 'explore', icon: '◈',
+    eyebrow: 'Explore · London',
+    title: 'London Things To Do',
+    sub: 'May 1–4 · Family days + night out',
+    explore: [
+      {
+        cat: '👨‍👩‍👦 Family Adventures',
+        items: [
+          { name: 'Notting Hill — Getting There', meta: 'Central line one stop to Notting Hill Gate, or a 25 min walk through Hyde Park. All Saints Road and Westbourne Grove is the best neighbourhood base — Victorian pubs, independent shops, no chains, locals not tourists.', tag: 'walk', maps: 'https://www.google.com/maps/search/?api=1&query=Notting+Hill+Gate+London' },
+          { name: 'The Windsor Castle pub', meta: 'Victorian pub from 1826 on Campden Hill Road — Grade II listed, three small wood-panelled rooms, heated beer garden out back. Holland Park is 2 min from the front door: have a pint on the terrace, send the boy to the park. Best beer garden in the neighbourhood.', tag: 'beer', maps: 'https://www.google.com/maps/search/?api=1&query=Windsor+Castle+114+Campden+Hill+Road+London+W8' },
+          { name: 'The Ladbroke Arms', meta: 'The pub locals quietly guard — flower-bedecked front terrace, AA Rosette food, excellent Sunday roast, entirely residential street. Feels miles from central London. Between Notting Hill Gate and Holland Park tubes. Book ahead for Sunday lunch.', tag: 'beer', maps: 'https://www.google.com/maps/search/?api=1&query=Ladbroke+Arms+54+Ladbroke+Road+Notting+Hill+London' },
+          { name: 'The Cow', meta: 'Notting Hill institution on Westbourne Park Road — Guinness and oysters at the bar, upstairs dining room for proper food. Irish gastropub energy beloved by locals for 30 years. Best seats are at the bar. The oysters are non-negotiable.', tag: 'beer', maps: 'https://www.google.com/maps/search/?api=1&query=The+Cow+89+Westbourne+Park+Road+Notting+Hill+London' },
+          { name: 'The Pelican', meta: 'Michelin Bib Gourmand pub on All Saints Road — Victorian bones, open fire, bone marrow, venison. Named Good Food Guide best pub in London 2025. Dark and atmospheric, locals-only feel. Book ahead for dinner.', tag: 'beer', maps: 'https://www.google.com/maps/search/?api=1&query=The+Pelican+45+All+Saints+Road+Notting+Hill+London' },
+          { name: 'Portobello Road Market', meta: 'Best on Saturdays (8am–7pm). Walk north past Westway for the real market — antiques, vintage, independent food stalls. Avoid the tourist stretch near the tube.', tag: 'walk', maps: 'https://www.google.com/maps/search/?api=1&query=Portobello+Road+Market+Notting+Hill+London' },
+          { name: 'Hyde Park + Kensington Gardens', meta: 'Flat, connected parks running from Notting Hill Gate all the way back to Marble Arch — about 35 min walk home through the park. Pram-perfect, beautiful in the afternoon.', tag: 'walk', maps: 'https://www.google.com/maps/search/?api=1&query=Kensington+Gardens+Hyde+Park+London' },
+          { name: 'Bull and Last — Hampstead Heath', meta: '20–25 min by tube (Central line to Bond St, Northern line to Kentish Town). 300-year-old coaching inn directly across the road from Hampstead Heath — 790 acres of open common land. Crayons on the tables, dogs everywhere, food that rivals bistros. Ranked top 10 gastropub in the UK 2025. Walk straight onto the Heath after lunch. Book ahead.', tag: 'beer', maps: 'https://www.google.com/maps/search/?api=1&query=Bull+and+Last+168+Highgate+Road+London+NW5' },
+        ],
+      },
+      {
+        cat: '🌙 Night Out (without the boy)',
+        items: [
+          { name: 'The neighbourhood — Dalston', meta: 'East Village equivalent. 25 min from Marble Arch on the Overground (Paddington to Dalston Junction via Highbury and Islington). Multicultural, scruffy high street, Turkish grills next to natural wine bars, working class bones. The real thing.', tag: 'walk', maps: 'https://www.google.com/maps/search/?api=1&query=Dalston+Junction+London' },
+          { name: 'Acme Fire Cult', meta: 'The Gun equivalent for East London — open-flame kitchen in a converted car park shared with 40FT Brewery and Dusty Knuckle bakery. Covered outdoor terrace, heat from the grill, natural wine, seasonal fire-cooked food. Completely unpretentious. Book ahead.', tag: 'beer', maps: 'https://www.google.com/maps/search/?api=1&query=Acme+Fire+Cult+Bradbury+Street+Dalston+London' },
+          { name: 'Three Sheets', meta: 'Small and unshowy cocktail bar in Dalston — easy to walk past, one of the best in London. Classic cocktails with a modern twist: Shiso Miso Old Fashioned, Almond Flower Sour. No music competing with conversation. The bar you find by knowing.', tag: 'beer', maps: 'https://www.google.com/maps/search/?api=1&query=Three+Sheets+510b+Kingsland+Road+Dalston+London' },
+          { name: "Mangal II", meta: 'Dalston institution since 1990 — Turkish ocakbasi grill on Stoke Newington Road. Wood-fired mangal, lamb beyond reproach, BYO wine. Street-side tables in summer. The anti-restaurant. No fuss, just fire and flavour.', tag: 'coffee', maps: 'https://www.google.com/maps/search/?api=1&query=Mangal+II+4+Stoke+Newington+Road+Dalston+London' },
+          { name: 'The neighbourhood — Peckham', meta: 'Bushwick equivalent, south London. 30 min on the Overground from Paddington. Jazz in old railway tunnels, cocktails on the roof of an abandoned car park, creative energy without the performance. More festival than Dalston, brilliant for a proper night out.', tag: 'walk', maps: 'https://www.google.com/maps/search/?api=1&query=Peckham+Rye+Station+London' },
+          { name: 'Coal Rooms, Peckham', meta: 'Set in the former Peckham Rye train station ticket office — charcoal grill and oven, 40-day aged sirloin, dry-aged duck, mead ketchup. Old station platform terrace outside. Genuinely special setting, very The Gun in atmosphere and feel.', tag: 'coffee', maps: 'https://www.google.com/maps/search/?api=1&query=Coal+Rooms+Peckham+Rye+Station+London' },
+          { name: 'Levan + Bar Levan, Peckham', meta: 'Neighbourhood favourite with Michelin Bib Gourmand — open kitchen, natural wines, 1970s funk on the record player. Comté cheese fries with saffron aioli. Bar Levan next door: dark red decor, intimate, DJs without the club commitment. Already named one of London best wine bars.', tag: 'beer', maps: 'https://www.google.com/maps/search/?api=1&query=Levan+12+Blenheim+Grove+Peckham+London' },
+        ],
+      },
+      {
+        cat: '🚶 Walks',
+        items: [
+          { name: 'All Saints Road + Westbourne Grove', meta: 'The two backstreets at the heart of Notting Hill — independent shops, wine bars, no chains. All Saints Road especially has the Gun energy: slightly scruffy, creative, entirely local.', tag: 'walk', maps: 'https://www.google.com/maps/search/?api=1&query=All+Saints+Road+Notting+Hill+London' },
+          { name: 'Hyde Park walk home', meta: 'After Notting Hill, walk back to Marble Arch through Hyde Park and Kensington Gardens — flat, 35 min, beautiful at any time of day.', tag: 'walk', maps: 'https://www.google.com/maps/search/?api=1&query=Hyde+Park+London' },
+        ],
+      },
+    ],
+  },
+  {
+    id: 's12', type: 'train', icon: '⇢',
+    eyebrow: 'Train · Eurostar',
+    title: 'London St Pancras → Brussels',
+    sub: 'May 4 · 09:01 – 12:05',
+    qrUrl: 'https://qr.eurostar.com/lXbppy',
+    details: [
+      { label: 'Depart',     value: 'London St Pancras · 09:01' },
+      { label: 'Arrive',     value: 'Brussels Midi/Zuid · 12:05' },
+      { label: 'Train',      value: '9116 · Eurostar' },
+      { label: 'Booking',    value: 'RFQ7K6' },
+      { label: 'Seats',      value: 'Matt: Coach 3 Seat 27 · Lisa: Coach 3 Seat 28' },
+      { label: 'Tickets',    value: 'Matt: 918551776 · Lisa: 146257703' },
+      { label: '⚠ Note',    value: 'Passport control closes 30 min before departure — arrive by 08:30' },
+      { label: 'Onward',     value: 'Brussels → Rotterdam · NS International · own booking' },
+    ],
+  },
+  {
+    id: 's13', type: 'stay', icon: '⌂',
+    eyebrow: 'Stay · B&B',
+    title: 'B&B Bepper, Leiden',
+    sub: 'May 5–12 · 7 nights',
+    emailLink: 'https://mail.google.com/mail/u/0/#inbox/19d04ea08e8ae72a',
+    details: [
+      { label: 'Address',  value: 'Pieterskerkhof 36, 2311 ST Leiden' },
+      { label: 'Check-in', value: 'Tue May 5 · after 3:00 PM' },
+      { label: 'Checkout', value: 'Tue May 12 · by 11:00 AM' },
+      { label: 'Host',     value: 'Liesbeth · +31 6 12400150' },
+      { label: 'Code',     value: 'HM8EYCHKSQ · CAD $1,581.04' },
+    ],
+  },
+  {
+    id: 's14', type: 'flight', icon: '✈',
+    eyebrow: 'Flight · Return',
+    title: 'AMS → YVR',
+    sub: 'May 12 · 15:20 – 15:55',
+    details: [
+      { label: 'Depart', value: 'Tue May 12 · 15:20 · Amsterdam Schiphol' },
+      { label: 'Arrive', value: 'Tue May 12 · 15:55 · Vancouver YVR' },
+      { label: 'Flight', value: 'KLM KL0681 · Economy' },
+      { label: 'Note',   value: 'Leiden checkout 11:00 AM → Schiphol ~45 min ✓' },
+    ],
+  },
+];
+
+// Render alerts
+const alertsEl = document.getElementById('alerts');
+alerts.forEach(a => {
+  const div = document.createElement('div');
+  div.className = `alert alert-${a.type === 'warning' ? 'warn' : 'info'}`;
+  div.innerHTML = `<span class="alert-icon">${a.type === 'warning' ? '▲' : '→'}</span><span>${a.text}</span>`;
+  alertsEl.appendChild(div);
+});
+
+// Render timeline
+const timelineEl = document.getElementById('timeline');
+let openId = null;
+
+function render() {
+  timelineEl.innerHTML = '';
+  segments.forEach(seg => {
+    const isOpen = openId === seg.id;
+    const wrap = document.createElement('div');
+    wrap.className = `seg type-${seg.type}${isOpen ? ' is-open' : ''}`;
+
+    const detailsHTML = seg.details ? seg.details.map(d =>
+      `<div class="detail-row"><span class="d-label">${d.label}</span><span class="d-val">${d.value}</span></div>`
+    ).join('') : '';
+
+    let exploreHTML = '';
+    if (seg.explore) {
+      exploreHTML = `<div class="explore-section">` + seg.explore.map(cat => `
+        <div class="explore-cat-label">${cat.cat}</div>
+        ${cat.items.map(item => `
+          <div class="explore-item">
+            <div class="explore-name">${item.name}</div>
+            <div class="explore-meta">${item.meta}</div>
+            <div style="display:flex;align-items:center;gap:8px;margin-top:5px;">
+              <span class="explore-tag tag-${item.tag}">${item.tag}</span>
+              ${item.maps ? `<a href="${item.maps}" target="_blank" rel="noopener noreferrer" style="font-size:9px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:var(--on-dim);text-decoration:none;">↗ Maps</a>` : ''}
+            </div>
+          </div>`).join('')}
+      `).join('') + `</div>`;
+    }
+
+    const emailHTML = seg.emailLink
+      ? `<a href="${seg.emailLink}" target="_blank" rel="noopener noreferrer" class="email-link">✉ View confirmation</a>`
+      : '';
+
+    const qrHTML = seg.qrUrl
+      ? `<div class="qr-block"><img src="${seg.qrUrl}" alt="QR Code" class="qr-img" /><span class="qr-label">Scan to open ticket</span></div>`
+      : '';
+
+    const bodyHTML = isOpen ? `
+      <div class="seg-divider"></div>
+      <div class="seg-body">
+        ${detailsHTML}${exploreHTML}
+        ${emailHTML}
+      </div>` : '';
+
+    wrap.innerHTML = `
+      <button class="seg-btn" data-id="${seg.id}">
+        <div class="seg-icon">${seg.icon}</div>
+        <div class="seg-info">
+          <div class="seg-eyebrow">${seg.eyebrow}</div>
+          <div class="seg-name">${seg.title}</div>
+          <div class="seg-sub">${seg.sub}</div>
+        </div>
+        <div class="seg-right">
+          ${seg.warning ? '<div class="warn-pip"></div>' : ''}
+          <div class="chevron${isOpen ? ' open' : ''}">▼</div>
+        </div>
+      </button>
+      ${bodyHTML}
+    `;
+    timelineEl.appendChild(wrap);
+  });
+}
+
+timelineEl.addEventListener('click', e => {
+  const btn = e.target.closest('.seg-btn');
+  if (!btn) return;
+  openId = openId === btn.dataset.id ? null : btn.dataset.id;
+  render();
+});
+
+render();
+</script>
+</body>
+</html>
