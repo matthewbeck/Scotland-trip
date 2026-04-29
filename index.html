@@ -65,6 +65,30 @@
       color: var(--primary);
     }
 
+    .header-actions {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .today-btn {
+      font-family: inherit;
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--bg);
+      background: var(--orange-hot);
+      padding: 5px 10px;
+      border: none;
+      border-radius: 999px;
+      cursor: pointer;
+      -webkit-tap-highlight-color: transparent;
+      transition: opacity 0.15s ease;
+    }
+    .today-btn:active { opacity: 0.7; }
+    .today-btn[hidden] { display: none; }
+
     .header-badge {
       font-size: 10px;
       font-weight: 600;
@@ -454,7 +478,10 @@
   <header class="app-header">
     <div class="header-inner">
       <div class="header-wordmark">Voyager</div>
-      <div class="header-badge">Apr 14 – May 12</div>
+      <div class="header-actions">
+        <button class="today-btn" id="today-btn" type="button">↓ Today</button>
+        <div class="header-badge">Apr 14 – May 12</div>
+      </div>
     </div>
   </header>
 
@@ -494,8 +521,6 @@
 
 <script>
 const alerts = [
-  { type: 'warning', text: 'CalMac Apr 26: Ferry check-in closes 11:10 in Mallaig. Snowberry checkout 10:00 AM. Leave Onich by 09:30.' },
-  { type: 'info',    text: 'Avis covers Apr 23–29: Edinburgh → Onich → Mallaig → Skye → Edinburgh.' },
   { type: 'info',    text: 'Return KL0681 May 12: Leiden checkout 11:00 AM → Schiphol ~45 min → departs 15:20.' },
 ];
 
@@ -742,6 +767,7 @@ const segments = [
     eyebrow: 'Car · Avis Drop-off',
     title: 'Edinburgh Waverley',
     sub: 'Apr 29 · 5:00 PM',
+    start: '2026-04-29',
     emailLink: 'https://mail.google.com/mail/u/0/#inbox/19cfd17a99d63004',
     details: [
       { label: 'Location', value: 'Qpark Greenside Row, Level -2' },
@@ -754,6 +780,7 @@ const segments = [
     eyebrow: 'Stay · Hotel',
     title: 'The Raeburn, Edinburgh',
     sub: 'Apr 29 – May 1 · 2 nights',
+    start: '2026-04-29', end: '2026-05-01',
     emailLink: 'https://mail.google.com/mail/u/0/#inbox/19cd0f72aa67f8d1',
     details: [
       { label: 'Address',  value: '112 Raeburn Place, Edinburgh EH4 1HG' },
@@ -771,6 +798,7 @@ const segments = [
     eyebrow: 'Train · LNER',
     title: 'Edinburgh → London Kings Cross',
     sub: 'May 1 · 09:00 – 13:10',
+    start: '2026-05-01',
     emailLink: 'https://mail.google.com/mail/u/0/#inbox/19dd2f9d2ec9353b',
     details: [
       { label: 'Depart',   value: 'Edinburgh Waverley · 09:00' },
@@ -791,6 +819,7 @@ const segments = [
     eyebrow: 'Explore · Leith',
     title: 'Things to Do · The Shore',
     sub: 'Apr 29 – May 1 · coffee, beer, waterfront walk',
+    start: '2026-04-29', end: '2026-05-01',
     explore: [
       {
         cat: '🚌 Getting There',
@@ -839,12 +868,11 @@ const segments = [
     eyebrow: 'Stay · Hotel',
     title: 'The Cumberland, London',
     sub: 'May 1–4 · 3 nights',
-    warning: true,
+    start: '2026-05-01', end: '2026-05-04',
     details: [
       { label: 'Address',  value: 'Great Cumberland Place, London W1H 7DL' },
       { label: 'Check-in', value: 'Fri May 1 · arriving ~2:00 PM' },
       { label: 'Checkout', value: 'Mon May 4 · before Eurostar 09:01' },
-      { label: '⚠ To do',  value: 'Book Edinburgh → London train (LNER, ~4.5 hrs) for May 1' },
     ],
   },
   {
@@ -852,6 +880,7 @@ const segments = [
     eyebrow: 'Explore · London',
     title: 'London Things To Do',
     sub: 'May 1–4 · Family days + night out',
+    start: '2026-05-01', end: '2026-05-04',
     explore: [
       {
         cat: '👨‍👩‍👦 Family Adventures',
@@ -892,6 +921,7 @@ const segments = [
     eyebrow: 'Train · Eurostar',
     title: 'London St Pancras → Brussels',
     sub: 'May 4 · 09:01 – 12:05',
+    start: '2026-05-04',
     qrUrl: 'https://qr.eurostar.com/lXbppy',
     details: [
       { label: 'Depart',     value: 'London St Pancras · 09:01' },
@@ -909,6 +939,7 @@ const segments = [
     eyebrow: 'Stay · B&B',
     title: 'B&B Bepper, Leiden',
     sub: 'May 5–12 · 7 nights',
+    start: '2026-05-05', end: '2026-05-12',
     emailLink: 'https://mail.google.com/mail/u/0/#inbox/19d04ea08e8ae72a',
     details: [
       { label: 'Address',  value: 'Pieterskerkhof 36, 2311 ST Leiden' },
@@ -923,6 +954,7 @@ const segments = [
     eyebrow: 'Flight · Return',
     title: 'AMS → YVR',
     sub: 'May 12 · 15:20 – 15:55',
+    start: '2026-05-12',
     details: [
       { label: 'Depart', value: 'Tue May 12 · 15:20 · Amsterdam Schiphol' },
       { label: 'Arrive', value: 'Tue May 12 · 15:55 · Vancouver YVR' },
@@ -1018,6 +1050,35 @@ timelineEl.addEventListener('click', e => {
   openId = openId === btn.dataset.id ? null : btn.dataset.id;
   render();
 });
+
+// "Today" button — opens and scrolls to the segment matching today's date.
+function getCurrentSegmentId() {
+  const d = new Date();
+  const today = `${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,'0')}-${String(d.getDate()).padStart(2,'0')}`;
+  // Prefer an active stay (covers most days of the trip)
+  const stay = segments.find(s => s.type === 'stay' && s.start && s.start <= today && today <= (s.end || s.start));
+  if (stay) return stay.id;
+  // Otherwise: an event happening exactly today
+  const todayEvent = segments.find(s => s.start === today);
+  if (todayEvent) return todayEvent.id;
+  // Otherwise: next upcoming dated segment
+  const upcoming = segments.find(s => s.start && s.start > today);
+  return upcoming ? upcoming.id : null;
+}
+
+const todayBtn = document.getElementById('today-btn');
+todayBtn.addEventListener('click', () => {
+  const id = getCurrentSegmentId();
+  if (!id) return;
+  openId = id;
+  render();
+  requestAnimationFrame(() => {
+    const el = document.querySelector(`.seg-btn[data-id="${id}"]`);
+    if (el) el.closest('.seg').scrollIntoView({ behavior: 'smooth', block: 'center' });
+  });
+});
+// Hide the button if there's no current/upcoming segment to jump to (trip ended)
+if (!getCurrentSegmentId()) todayBtn.hidden = true;
 
 render();
 </script>

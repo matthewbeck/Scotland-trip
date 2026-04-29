@@ -23,7 +23,7 @@ The `apple-touch-icon` is embedded inline as a base64 data URI (S&N monogram).
 
 Two top-level arrays in the `<script>` block:
 
-1. **`alerts`** — top-of-page warnings/info messages (`{ type, text }`)
+1. **`alerts`** — top-of-page warnings/info messages (`{ type, text }`). Prune entries whose date has passed; they're for upcoming logistics, not history.
 2. **`segments`** — the timeline cards
 
 Each segment:
@@ -37,6 +37,8 @@ Each segment:
   title: 'YVR → AMS',
   sub: 'Apr 14 · 17:50 – 12:05+1',
   emailLink: 'https://mail.google.com/...',  // optional Gmail deep link
+  start: '2026-05-01',                        // optional ISO date — drives the "↓ Today" button
+  end:   '2026-05-04',                        // optional ISO end date for multi-day stays
   details: [                                  // optional, for bookings
     { label: 'Depart', value: '...' },
   ],
@@ -48,6 +50,8 @@ Each segment:
   ],
 }
 ```
+
+**`start`/`end` semantics:** the "↓ Today" button in the header finds the active segment by checking, in order: an active `stay` whose `start <= today <= end`; an event with `start === today`; the next upcoming `start > today`. Past segments don't need dates (they'll never be "current" again), but future segments should have them.
 
 When inserting new segments mid-timeline, **don't renumber** — use the next available id (e.g. `s10b` between `s10` and `s10x`).
 
