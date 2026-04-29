@@ -91,54 +91,11 @@ GitHub Pages redeploys in ~60 seconds.
 | Apr 26–29 | Skye Airbnb, Staffin | Done |
 | Apr 29 | Avis dropoff Edinburgh | Done |
 | Apr 29–May 1 | The Raeburn Hotel, Edinburgh | **Currently here** |
-| **May 1** | **LNER Edinburgh→London (09:00–13:10)** | **Booked, needs to be added** |
+| May 1 | LNER Edinburgh→London (09:00–13:10) | Done |
 | May 1–4 | The Cumberland, London | Upcoming |
 | May 4 | Eurostar London→Brussels + NS to Rotterdam | Upcoming |
 | May 5–12 | B&B Bepper, Leiden | Upcoming |
 | May 12 | KL0681 AMS→YVR | Upcoming |
-
-There is currently an alert at the top warning the Edinburgh→London train is unbooked. **Remove it once the LNER booking is added.**
-
-## Pending: LNER Edinburgh→London booking
-
-From Gmail thread `19dd2f9d2ec9353b` (sender `noreply@lner.co.uk`, dated Apr 28 2026). Decoded data:
-
-- Confirmation: `26SYXRYMYF`
-- Booking ref: `BZ616265`
-- May 1, Edinburgh Waverley 09:00 → London Kings Cross 13:10
-- Coach G, Seats 21–22
-- 2 adult passengers
-- QR ticket payloads: `CBBNXCQJV4N` and `CBBNXCQJV4Q`
-
-Add this as `s10b` between `s10` (Raeburn) and `s10x` (Leith Explore):
-
-```js
-{
-  id: 's10b', type: 'train', icon: '⇢',
-  eyebrow: 'Train · LNER',
-  title: 'Edinburgh → London Kings Cross',
-  sub: 'May 1 · 09:00 – 13:10',
-  emailLink: 'https://mail.google.com/mail/u/0/#inbox/19dd2f9d2ec9353b',
-  details: [
-    { label: 'Depart',   value: 'Edinburgh Waverley · 09:00' },
-    { label: 'Arrive',   value: 'London Kings Cross · 13:10' },
-    { label: 'Duration', value: '4h 10m · direct' },
-    { label: 'Coach',    value: 'Coach G · Seats 21–22' },
-    { label: 'Confirm',  value: '26SYXRYMYF' },
-    { label: 'Booking',  value: 'BZ616265' },
-    { label: 'Tickets',  value: 'Adult 1: CBBNXCQJV4N · Adult 2: CBBNXCQJV4Q' },
-    { label: '⚠ Timing', value: 'Train at 09:00. Settle Raeburn bill Apr 30 evening; key-drop checkout 08:15; taxi to Waverley ~10 min.' },
-  ],
-},
-```
-
-And remove this from the `alerts` array:
-
-```js
-{ type: 'warning', text: 'Edinburgh → London train not yet booked. Check out The Raeburn May 1 (11:00 AM) — must arrive London before Eurostar May 4 at 09:01.' },
-```
-
-**After this section is successfully added and committed, delete this entire "Pending: LNER..." section from CLAUDE.md** — it's an active to-do, not permanent context. Update the itinerary table row to mark the LNER booking as "Done" rather than "Booked, needs to be added."
 
 ## Common edits I'll ask for
 
