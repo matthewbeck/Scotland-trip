@@ -43,10 +43,30 @@ Each segment:
   explore: [                                  // optional, for explore segments
     { cat: '☕ Coffee', items: [{ name, meta, tag, maps }] },
   ],
+  tickets: [                                  // optional, scannable QR per passenger
+    { passenger: 'Adult 1 · CBBNXCQJV4N', image: 'data:image/png;base64,...' },
+  ],
 }
 ```
 
 When inserting new segments mid-timeline, **don't renumber** — use the next available id (e.g. `s10b` between `s10` and `s10x`).
+
+### Generating QR codes for `tickets`
+
+QR payload strings (e.g. `CBBNXCQJV4N`) come from the `agentic-email` MCP server's `get_travel_itinerary` call (under `rawBarcodes`). To turn a payload into a scannable QR data URI:
+
+```bash
+python3 -c "
+import segno, base64, io
+qr = segno.make('CBBNXCQJV4N', error='H')
+buf = io.BytesIO(); qr.save(buf, kind='png', scale=8, border=2)
+print('data:image/png;base64,' + base64.b64encode(buf.getvalue()).decode())
+"
+```
+
+Each PNG is ~275 bytes (~390-char data URI). `segno` is pure-Python, no deps; install once with `python3 -m pip install --user segno`.
+
+There is also a dormant `qrUrl` field on a couple of segments (KLM, Eurostar) referencing external QR-generator URLs — its render path isn't wired up. Use `tickets` instead.
 
 ## Critical gotcha: apostrophes
 

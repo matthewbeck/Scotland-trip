@@ -779,8 +779,11 @@ const segments = [
       { label: 'Coach',    value: 'Coach G · Seats 21–22' },
       { label: 'Confirm',  value: '26SYXRYMYF' },
       { label: 'Booking',  value: 'BZ616265' },
-      { label: 'Tickets',  value: 'Adult 1: CBBNXCQJV4N · Adult 2: CBBNXCQJV4Q' },
       { label: '⚠ Timing', value: 'Train at 09:00. Settle Raeburn bill Apr 30 evening; key-drop checkout 08:15; taxi to Waverley ~10 min.' },
+    ],
+    tickets: [
+      { passenger: 'Adult 1 · CBBNXCQJV4N', image: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOgAAADoAQAAAADN0pXVAAAA2klEQVR42u2ZwQ7DMAhDrf3/PzOtwYZT730rkZIoObkE26Kqu9B7+/xbnbg25ygnH93FE2/lDyLjrDmh4v0tnmvv2Xh71L/gTQ3T8ZqlynzFrt/erIHm59GmyXEHFG8nObIUYWLiXQJsgm70VL7azLWJGppfz0NcXddU/b246kxTy2LXb4o2Fousv0eMVOuFc/VXMc2bnrn5jdPQZi26v8pjHuZi+2dn2Au+v1GrmAuM152N9DbYfDWdnBitQvtnm8ghK4H9s3bbNgLM5+fd1mlHze5vvH8feLdfCDIpfYifwC8AAAAASUVORK5CYII=' },
+      { passenger: 'Adult 2 · CBBNXCQJV4Q', image: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOgAAADoAQAAAADN0pXVAAAA2ElEQVR42u1ZMRKAMAjL+f8/x1MgoIN7U7kOtUwpkAYEvwy/d30vwmJ7LZ3wwJet6EVdSODVLq7CFG9EF7EhdOKNt5J/G7wR5Q3wZtXeMEG616/4eUTXmJ/nwwWx822meIufE3FF3ZqvmMDR+I3jW2sqDlu8ED2/WdqVn8XKGWy612/gjPaBmeR05iu9wBRl2fNzcVY3ka56soUW27GBvnpQNs31c2X00JTW/RHHdw52vOcblJo2n1/hqa2gPsl9fqVpjve8TvXbGb0FP2M0wv7v7//3wdB7AkCqJ39JuncbAAAAAElFTkSuQmCC' },
     ],
   },
   {
@@ -977,10 +980,16 @@ function render() {
       ? `<div class="qr-block"><img src="${seg.qrUrl}" alt="QR Code" class="qr-img" /><span class="qr-label">Scan to open ticket</span></div>`
       : '';
 
+    const ticketsHTML = seg.tickets
+      ? seg.tickets.map(t =>
+          `<div class="qr-block"><img src="${t.image}" alt="QR ticket" class="qr-img" /><span class="qr-label">${t.passenger}</span></div>`
+        ).join('')
+      : '';
+
     const bodyHTML = isOpen ? `
       <div class="seg-divider"></div>
       <div class="seg-body">
-        ${detailsHTML}${exploreHTML}
+        ${detailsHTML}${exploreHTML}${ticketsHTML}
         ${emailHTML}
       </div>` : '';
 
